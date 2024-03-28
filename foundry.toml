@@ -1,0 +1,16 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.20"
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_URL}"
+base-sepolia = "${BASE_SEPOLIA_URL}"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_KEY}", chain = 11155111 }
+base-sepolia = { key = "${BASESCAN_KEY}", chain = 84532, url = "${BASESCAN_URL}" }
+base = { key = "${BASESCAN_KEY}", chain = 8453, url = "${BASESCAN_URL}" }
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
